@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
 //        chaper2()
 //        chaper3()
-        chap5()
+//        chap5()
     }
     
     func example(of description: String,
