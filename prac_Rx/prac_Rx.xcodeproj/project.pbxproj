@@ -18,6 +18,7 @@
 		BC87F1DE26D4968A0049A794 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87F1DD26D4968A0049A794 /* ImageCollectionViewCell.swift */; };
 		BC87F1E026D4BFC10049A794 /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87F1DF26D4BFC10049A794 /* PhotoWriter.swift */; };
 		BCB2DF1426D7529800688D90 /* Chap5_FilteringOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2DF1326D7529800688D90 /* Chap5_FilteringOperators.swift */; };
+		BCCC0F5C26DCAB3C008EEEA0 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F5B26DCAB3C008EEEA0 /* UIViewController+.swift */; };
 		BCCEC1B126CA489700DE4283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B026CA489700DE4283 /* AppDelegate.swift */; };
 		BCCEC1B326CA489700DE4283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B226CA489700DE4283 /* SceneDelegate.swift */; };
 		BCCEC1B526CA489700DE4283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B426CA489700DE4283 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		BC87F1DD26D4968A0049A794 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		BC87F1DF26D4BFC10049A794 /* PhotoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
 		BCB2DF1326D7529800688D90 /* Chap5_FilteringOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chap5_FilteringOperators.swift; sourceTree = "<group>"; };
+		BCCC0F5B26DCAB3C008EEEA0 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		BCCEC1AD26CA489600DE4283 /* prac_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prac_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCEC1B026CA489700DE4283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCEC1B226CA489700DE4283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				BC87F1CE26D391C60049A794 /* UIImage+Collage.swift */,
 				BC87F1D226D394390049A794 /* CombinestagramViewController.swift */,
 				BC87F1DB26D47F5F0049A794 /* PhotosViewController.swift */,
+				BCCC0F5B26DCAB3C008EEEA0 /* UIViewController+.swift */,
 				BC87F1DF26D4BFC10049A794 /* PhotoWriter.swift */,
 			);
 			path = Chap4;
@@ -243,6 +246,7 @@
 			files = (
 				BC87F1D826D39C1E0049A794 /* CombinestagramViewController.swift in Sources */,
 				BC87F1DC26D47F5F0049A794 /* PhotosViewController.swift in Sources */,
+				BCCC0F5C26DCAB3C008EEEA0 /* UIViewController+.swift in Sources */,
 				BCCEC1B526CA489700DE4283 /* ViewController.swift in Sources */,
 				BC87F1CF26D391C60049A794 /* UIImage+Collage.swift in Sources */,
 				BCB2DF1426D7529800688D90 /* Chap5_FilteringOperators.swift in Sources */,

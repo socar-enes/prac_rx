@@ -10,6 +10,24 @@ import Photos
 import RxSwift
 import RxCocoa
 
+extension PHPhotoLibrary {
+    static var authorized: Observable<Bool> {
+        return Observable.create { observer in
+            DispatchQueue.main.async {
+                if authorizationStatus() == .authorized {
+                    observer.onNext(true)
+                    observer.onCompleted()
+                } else {
+                    observer.onNext(false)
+                    requestAuthorization { newStatus in
+                        observer.onNext(newStatus == .authorized)
+                        observer.onCompleted()
+                    }
+                } }
+            return Disposables.create()
+        }
+    } }
+
 class PhotosViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -31,16 +49,35 @@ class PhotosViewController: UIViewController {
     var selectedPhotos: Observable<UIImage> {
       return selectedPhotosSubject.asObservable()
     }
-        
+    private let disposeBag = DisposeBag()
+    let authorized = PHPhotoLibrary.authorized.share()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        PHPhotoLibrary.requestAuthorization { status in
-            print(status)
-        }
+        authorized
+            .skip { !$0 }
+            .take(1)
+            .subscribe(onNext: { [weak self] _ in
+                self?.photos = PhotosViewController.loadPhotos()
+                DispatchQueue.main.async {
+                    self?.collectionView?.reloadData()
+                }
+            })
+            .disposed(by: disposeBag)
+       
+        authorized
+            .distinctUntilChanged()
+            .takeLast(1)
+            .filter { !$0 }
+            .subscribe(onNext: { [weak self] _ in
+                guard let errorMessage = self?.errorMessage else { return }
+                DispatchQueue.main.async(execute: errorMessage)
+            })
+            .disposed(by: disposeBag)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,6 +89,19 @@ class PhotosViewController: UIViewController {
     deinit {
         print("✅deinit")
     }
+    
+    private func errorMessage() {
+      alert(title: "No access to Camera Roll",
+        text: "You can grant access to Combinestagram from the Settings app")
+        .asObservable()
+        .take(for: .seconds(5), scheduler: MainScheduler.instance)
+        .subscribe(onCompleted: { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+            self?.navigationController?.popViewController(animated: true)
+        })
+        .disposed(by: disposeBag)
+    }
+    
 }
 
 
