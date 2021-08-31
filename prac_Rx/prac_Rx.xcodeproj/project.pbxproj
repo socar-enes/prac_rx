@@ -19,6 +19,10 @@
 		BC87F1E026D4BFC10049A794 /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87F1DF26D4BFC10049A794 /* PhotoWriter.swift */; };
 		BCB2DF1426D7529800688D90 /* Chap5_FilteringOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB2DF1326D7529800688D90 /* Chap5_FilteringOperators.swift */; };
 		BCCC0F5C26DCAB3C008EEEA0 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F5B26DCAB3C008EEEA0 /* UIViewController+.swift */; };
+		BCCC0F5E26DCD36E008EEEA0 /* Chap7_TransformingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F5D26DCD36E008EEEA0 /* Chap7_TransformingOperators.swift */; };
+		BCCC0F6226DDEBE9008EEEA0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F6026DDEBE9008EEEA0 /* Event.swift */; };
+		BCCC0F6326DDEBE9008EEEA0 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F6126DDEBE9008EEEA0 /* ActivityController.swift */; };
+		BCCC0F6526DDF375008EEEA0 /* Chap8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCC0F6426DDF375008EEEA0 /* Chap8.storyboard */; };
 		BCCEC1B126CA489700DE4283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B026CA489700DE4283 /* AppDelegate.swift */; };
 		BCCEC1B326CA489700DE4283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B226CA489700DE4283 /* SceneDelegate.swift */; };
 		BCCEC1B526CA489700DE4283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B426CA489700DE4283 /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 		BC87F1DF26D4BFC10049A794 /* PhotoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
 		BCB2DF1326D7529800688D90 /* Chap5_FilteringOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chap5_FilteringOperators.swift; sourceTree = "<group>"; };
 		BCCC0F5B26DCAB3C008EEEA0 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		BCCC0F5D26DCD36E008EEEA0 /* Chap7_TransformingOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chap7_TransformingOperators.swift; sourceTree = "<group>"; };
+		BCCC0F6026DDEBE9008EEEA0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BCCC0F6126DDEBE9008EEEA0 /* ActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		BCCC0F6426DDF375008EEEA0 /* Chap8.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chap8.storyboard; sourceTree = "<group>"; };
 		BCCEC1AD26CA489600DE4283 /* prac_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prac_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCEC1B026CA489700DE4283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCEC1B226CA489700DE4283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +101,16 @@
 			path = Chap4;
 			sourceTree = "<group>";
 		};
+		BCCC0F5F26DDEBCE008EEEA0 /* Chap8 */ = {
+			isa = PBXGroup;
+			children = (
+				BCCC0F6126DDEBE9008EEEA0 /* ActivityController.swift */,
+				BCCC0F6026DDEBE9008EEEA0 /* Event.swift */,
+				BCCC0F6426DDF375008EEEA0 /* Chap8.storyboard */,
+			);
+			path = Chap8;
+			sourceTree = "<group>";
+		};
 		BCCEC1A426CA489600DE4283 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +139,8 @@
 				BC87F1A226CE1A3B0049A794 /* Chap3_Subject.swift */,
 				BC87F1CB26D385780049A794 /* Chap4 */,
 				BCB2DF1326D7529800688D90 /* Chap5_FilteringOperators.swift */,
+				BCCC0F5D26DCD36E008EEEA0 /* Chap7_TransformingOperators.swift */,
+				BCCC0F5F26DDEBCE008EEEA0 /* Chap8 */,
 				BCCEC1B626CA489700DE4283 /* Main.storyboard */,
 				BCCEC1B926CA489900DE4283 /* Assets.xcassets */,
 				BCCEC1BB26CA489900DE4283 /* LaunchScreen.storyboard */,
@@ -188,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCC0F6526DDF375008EEEA0 /* Chap8.storyboard in Resources */,
 				BC87F1D926D39C290049A794 /* Chap4.storyboard in Resources */,
 				BC87F1DA26D39C290049A794 /* Main.storyboard in Resources */,
 				BCCEC1BD26CA489900DE4283 /* LaunchScreen.storyboard in Resources */,
@@ -256,6 +277,9 @@
 				BC87F1DE26D4968A0049A794 /* ImageCollectionViewCell.swift in Sources */,
 				BCCEC1B326CA489700DE4283 /* SceneDelegate.swift in Sources */,
 				BC87F1A126CD08AC0049A794 /* Chap2_Observable.swift in Sources */,
+				BCCC0F6226DDEBE9008EEEA0 /* Event.swift in Sources */,
+				BCCC0F6326DDEBE9008EEEA0 /* ActivityController.swift in Sources */,
+				BCCC0F5E26DCD36E008EEEA0 /* Chap7_TransformingOperators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

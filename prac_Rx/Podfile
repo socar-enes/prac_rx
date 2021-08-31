@@ -8,4 +8,8 @@ target 'prac_Rx' do
   # Pods for prac_Rx
     pod 'RxSwift', '6.2.0'
     pod 'RxCocoa', '6.2.0'
+    pod 'Kingfisher', '5.14'
 end
+
+
+
