@@ -25,6 +25,7 @@ class ViewController: UIViewController {
 //        chaper3()
 //        chap5()
 //        chap7()
+        chap9()
     }
     
     func example(of description: String,

@@ -23,6 +23,7 @@
 		BCCC0F6226DDEBE9008EEEA0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F6026DDEBE9008EEEA0 /* Event.swift */; };
 		BCCC0F6326DDEBE9008EEEA0 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F6126DDEBE9008EEEA0 /* ActivityController.swift */; };
 		BCCC0F6526DDF375008EEEA0 /* Chap8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCC0F6426DDF375008EEEA0 /* Chap8.storyboard */; };
+		BCCC0F6726DF03B1008EEEA0 /* Chap9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCC0F6626DF03B1008EEEA0 /* Chap9.swift */; };
 		BCCEC1B126CA489700DE4283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B026CA489700DE4283 /* AppDelegate.swift */; };
 		BCCEC1B326CA489700DE4283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B226CA489700DE4283 /* SceneDelegate.swift */; };
 		BCCEC1B526CA489700DE4283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC1B426CA489700DE4283 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		BCCC0F6026DDEBE9008EEEA0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BCCC0F6126DDEBE9008EEEA0 /* ActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
 		BCCC0F6426DDF375008EEEA0 /* Chap8.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chap8.storyboard; sourceTree = "<group>"; };
+		BCCC0F6626DF03B1008EEEA0 /* Chap9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Chap9.swift; path = Chap8/Chap9.swift; sourceTree = "<group>"; };
 		BCCEC1AD26CA489600DE4283 /* prac_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prac_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCEC1B026CA489700DE4283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCEC1B226CA489700DE4283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				BCB2DF1326D7529800688D90 /* Chap5_FilteringOperators.swift */,
 				BCCC0F5D26DCD36E008EEEA0 /* Chap7_TransformingOperators.swift */,
 				BCCC0F5F26DDEBCE008EEEA0 /* Chap8 */,
+				BCCC0F6626DF03B1008EEEA0 /* Chap9.swift */,
 				BCCEC1B626CA489700DE4283 /* Main.storyboard */,
 				BCCEC1B926CA489900DE4283 /* Assets.xcassets */,
 				BCCEC1BB26CA489900DE4283 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				BCCEC1B126CA489700DE4283 /* AppDelegate.swift in Sources */,
 				BC87F1DE26D4968A0049A794 /* ImageCollectionViewCell.swift in Sources */,
 				BCCEC1B326CA489700DE4283 /* SceneDelegate.swift in Sources */,
+				BCCC0F6726DF03B1008EEEA0 /* Chap9.swift in Sources */,
 				BC87F1A126CD08AC0049A794 /* Chap2_Observable.swift in Sources */,
 				BCCC0F6226DDEBE9008EEEA0 /* Event.swift in Sources */,
 				BCCC0F6326DDEBE9008EEEA0 /* ActivityController.swift in Sources */,
